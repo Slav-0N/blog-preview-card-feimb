@@ -1,0 +1,77 @@
+:root{
+    --primary-color: #f4d04e;
+    --secundary-color: white;
+    --font-color: #6b6b6b;
+    --title-color: #111111;
+}
+*{
+    font-family: "Figtree", sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* card pc 384 * 522 */
+/* card mobile 327 * 501*/
+.card{
+    width: 384px;
+    height: 522px;
+    background-color: var(--secundary-color);
+    border-radius: 25px;
+    padding: 24px;
+}
+.card img{
+    border-radius: 9.8px;
+    margin-bottom: 24px;
+}
+.card .information{
+    text-align: start;
+}
+.card .information .category{
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 4px 12px;
+    font-weight: bold;
+}
+.card .information .date{
+    display: block;
+    margin-top: 12px;
+    font-size: 0.87rem;
+    color: var(--title-color);
+}
+
+h1{
+    color:var(--title-color);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.card .information > p{
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--font-color);
+}
+.card .autor{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card .autor span{
+    background-image: url("../assets/images/image-avatar.webp");
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+.card .autor p {
+    color: var(--title-color);
+}
